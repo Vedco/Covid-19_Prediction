@@ -1,0 +1,188 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Georgia;
+\f3\fnil\fcharset0 Verdana-Bold;\f4\fnil\fcharset0 Verdana;\f5\fnil\fcharset0 Georgia-Italic;
+\f6\fnil\fcharset0 Georgia-Bold;\f7\froman\fcharset0 TimesNewRomanPSMT;\f8\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;\red17\green92\blue142;
+\red10\green82\blue135;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\cssrgb\c5490\c43922\c62745;
+\cssrgb\c0\c40000\c60000;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh17700\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Abstract:
+\f1\b0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Machine learning is commonly being used in every field. Forecasting systems based on machine learning (ML) have shown their importance in interpreting perioperative effects to accelerate decision-making on the potential course of action. In several technology domains, ML models have been used long to define and prioritize adverse threat variables. To manage forecasting challenges, many prediction approaches are widely used. The paper shows the ability of ML models to estimate the amount of forthcoming COVID-19-affected patients that is now considered a serious threat to civilization. In paper this, we have performed a comparative study of five machine learning standard models like Linear regression (LR), decision tree, least absolute shrinkage and selection operator (LASSO), random forest and support vector machine (SVM) to forecast the threatening variables of COVID-19. Each of the models makes three forms of forecasts, i.e. the total active cases, the total deaths, and the total recoveries in the next five days. The findings provided by the paper suggest that the use of these techniques for the current COVID-19 the pandemic scenario is a promising strategy. For better accuracy, we have used a six-degree polynomial. Experiment results illustrate that poly LR and poly LASSO gives the best results followed by LR, LASSO, random forest, and decision tree. SVM shows the poor result in the prediction of COVID-19.
+\f2 \cb1 \
+\pard\tx720\pardeftab720\sa540\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs42 \cf4 SECTION I.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs64 \cf2 \cb3 Introduction\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 Coronavirus is an RNA virus that was caused by birds and mammals \cf5 [1]\cf2 . The novel coronavirus was originated from SARS-COV-2 (severe acute respiratory syndrome). The virus was first originated in Wuhan, China in December 2019. The virus spread all over the world in a very short period of time \cf5 [2]\cf2 . The latest virus is really infectious and has rapid progress of spread all over the world. The WHO announce this as epidemic a public health emergency of international concern (PHEIC) as it extended to nearly 19 nations before 30 January 2020 \cf5 [3]\cf2 . The emergence of this new virus in India, person-to-person spread include the families and medical workers was observed \cf5 [4]\cf2 . As the whole world is suffering from this pandemic situation India is one of the third countries which is affected by COVID-19 \cf5 [5]\cf2 . Every day, many new people are recorded as positive in India. The virus spreads mainly by people close to each other through physical touches, by sneeze, through holding the infected areas. The very difficult feature of the propagation is that for several days a human will carry the virus without displaying any symptoms. Health experts around the world are actively trying to identify a safe vaccination and treatments for the disease.\cb1 \
+\cb3 In India, the first case came on 3
+\f5\i 0
+\fs27 \super th
+\f2\i0\fs36 \nosupersub  January 2020 in Kerala. After that till March 2020 cases were only 200, to overcome the pandemic a lockdown was planned for 21 days. As unlock 1.0 came on 1st June 2020 the cases started increasing rapidly. In recent years, machine learning (ML) has shown to be a leading technology of research by solving so many complicated and complex actual problems. The fields of research include nearly all actual realms such as medical, independent vehicles (AV), business solutions, Natural Language processing (NLP), smart robotics, games, environment simulation, speech and image recognition. ML algorithm\'92s is usually based on hit and trial approaches very unlike standard algorithms, its totally based on programming like if-else rules \cf5 [6]\cf2 .\cb1 \
+\cb3 The objective of this study is to predict the cases for the next 5-15 days that will be helpful for the doctors and government for preparing their plans. Ramjeet et al. \cf5 [7]\cf2  utilized the six regression techniques that are quadratic, three-degree, four-degree, five degree, exponential and sixth degree polynomial. The sixth polynomial regression model shows the less values of best fit model as compare to another model. Ahmad et al. \cf5 [8]\cf2  present the classification that groups them into four categories. The four themes are as follows: deep learning regression, regression of conventional machine learning, system design, based on social media and queries data.\cb1 \
+\cb3 Of all the precautions, \'93being informed\'94 and among all the facts of COVID-19 is deemed to be important. Contributing to the global human tragedy is our effort in this analysis to build a COVID-19 forecasting framework. The forecasting is done on three bases: 1) confirmed cases 2) recovered cases 3) death cases for the upcoming 5-15 days. The problem is basically basing on supervised machine learning techniques. \cb1 \
+\cb3 The rest paper contains 5 sections: \cf5 Section 1\cf2  is about Introduction; \cf5 section 2\cf2  contains material and methods. \cf5 Section 3\cf2  contains methodology of paper; the outcome is outlined in \cf5 section 4\cf2  and lastly section summarizes the paper and conclusion.\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs42 \cf4 SECTION II.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs64 \cf2 \cb3 Material and Method\cb1 \
+\pard\pardeftab720\sa206\partightenfactor0
+
+\f6\b\fs41\fsmilli20610 \cf2 \cb3 A. Supervised machine learning model\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\b0\fs36 \cf2 \cb3 When an unknown instance of feedback is given, a supervised model of learning is built to make a decision \cf5 [10]\cf2 . In supervised learning, we practice the programme using a dataset that has been classified, indicating that this knowledge is identified with the right answer. Through labelled training outcomes, a supervised learning algorithm learns and helps one to forecast unexpected data effects. \cf5 [11]\cf2 . For predictive model growth, this paper uses regression models.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa426\partightenfactor0
+\ls1\ilvl0
+\f7\fs42\fsmilli21333 \cf6 \cb1 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+In this project we are using python language for data analysis, data visualization and prediction models. \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa426\partightenfactor0
+\ls1\ilvl0
+\f8 \cf6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\f7 \expnd0\expndtw0\kerning0
+In python programming we are using libraries like pandasfor data analysis and data cleaning,Matplotlib for visualization,seaborn because seaborn have some advance data analysis tools in which we can plot the data without help of default parameter,numpy for advance numerical techniques,datetime for time difference for prediction on different countries time zone. Sklearn for faster mathemathical calculations,SVR (support vector regression) ,statsmodels, holt\'92s method along with arima model (uses or time serirs analysis) this model gives us a better output for smoothing techniques for how data changes.  
+\f8 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\fs36 \cf2 \
+\cb3 We have used six regression models to forecast the study of COVID-19:\kerning1\expnd0\expndtw0 	\cb1 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa540\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Decision tree regressor\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Linear regression\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa540\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}Holts Method\
+{\listtext	\uc0\u8226 	}\cb3 \expnd0\expndtw0\kerning0
+Support vector machine\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa540\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\f6\b\fs33\fsmilli16740 \expnd0\expndtw0\kerning0
+Decision Tree Regressor
+\f2\b0\fs36 \
+\pard\tx720\pardeftab720\sa540\partightenfactor0
+\cf2 \cb1 \
+\
+\pard\pardeftab720\sa33\partightenfactor0
+
+\f6\b\fs33\fsmilli16740 \cf2 \cb3 Support Vector Machine (SVM)\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\b0\fs36 \cf2 \cb3 It is a very particular category of algorithms that are characterized by decision function energy storage, use of kernel functions, and solution sparsity \cf5 [14]\cf2 . System of machines are SVMs, which means that a regression problem is solved by the function. The input vector, x, when dealing with non-linear regression, is converted into a high-dimensional feature space by a nonlinear transformation, and then linear regression is done in that space \cf5 [15]\cf2 . Putting the definition as a series of observed responses in the sense of ML with a multivariate training data with N number of observations \cf5 [16]\cf2 :
+\f6\b\fs33\fsmilli16740 \
+\pard\pardeftab720\sa33\partightenfactor0
+\cf2 Decision Tree Regressor\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\b0\fs36 \cf2 \cb3 Strategies for the creation of discriminant analysis, also named classification and regression problems trees, have been established over the past twenty years \cf5 [17]\cf2 . Researchers in the machine-learning have been developing methods for immediately stimulating decision trees from data sets \cf5 [18]\cf2 . A decision tree, which is effective method to solve classification and regression problems. Building a regression tree is also focused on binary recursive partitioning that is an ongoing process that divides into partitions. \
+The most functional statistical methodology is a form of regression modelling, for the analysis of machine learning. \cf5 [20]\cf2 . It establishes causal link between the contingent and independent causes. In regression modelling, the independent characteristics are predicated on a target class \cf5 [21]\cf2 . To estimate a value for a dependent variable (y), linear regression performs a task based on a given independent variable (x). Thus, this method, a linear association is observed between x (input) and y (output). Equation indicates, then, how y is connected to x:\
+
+\f6\b\fs41\fsmilli20610 B. Methodology\cb1 \
+
+\f2\b0\fs36 \cb3 This study is about the COVID-19 forecast also known as a novel coronavirus. In human life, COVID-19 was a threat. The rate of death is raising every day in India, contributing to thousands of deaths. In order to resolve this pandemic power, the confirmed, and active cases still rise day by day, this study aims to estimate death rates, the number of active cases and, cases of confirmed and the total that are recovered in the coming days. Prevision is produced by the use of approaches to machine learning that are beneficial in this respect. The dataset reports the day the pandemic began, confirmed cases, recovered cases, deaths, and active situations. To find the details of known cases, rescued cases, deaths cases, the data is initially pre-processed.\cb1 \
+\cb3 After the pre-processing step is done, the data is parted in two sets: a training set for training model, and for testing model test set is used. Learning models used are LASSO, SVM, decision tree, random forest regression, Linear regression. The techniques are trained randomly. Models are then evaluated with the help of the following parameters like 
+\f5\i R
+\fs27 \super 2
+\f2\i0\fs36 \nosupersub  score, mean absolute Error, Root Mean Square Error, mean square error, as shown in the results. \cf5 Fig.1\cf2  shows the proposed work.\cb1 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/9312029/9311919/9312112/bhada1-2020015625_68-large.gif"}}{\fldrslt 
+\f4\fs30 \cf5 \cb3 {{\NeXTGraphic bhada1-2020015625_68-small.gif \width11000 \height9280 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf5 \
+}}\pard\pardeftab720\sa540\partightenfactor0
+\cf2 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs42 \cf4 SECTION III.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs64 \cf2 \cb3 Result and Discussions\cb1 \
+\pard\pardeftab720\sa206\partightenfactor0
+
+\f6\b\fs41\fsmilli20610 \cf2 \cb3 A. Dataset\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\b0\fs36 \cf2 \cb3 Objective is to know about the cases, the total deaths, and total reported cases. Api. covidl9india.org which is the official website of India from which data is taken \cf5 [24]\cf2 . The attributes of dataset contain in form of announced date, patient number, state code, entry id, age, gender, number of cases, current status, detected city, detected state. The data is taken from the 
+\f5\i 30
+\fs27 \super th
+\f2\i0\fs36 \nosupersub  of January 2020 to 
+\f5\i 8
+\fs27 \super th
+\f2\i0\fs36 \nosupersub  October 2020. The labels which is used for training the models are num cases, announced date, age, detected city, detected district, detected state, gender and current status. The \cf5 Fig.2\cf2 . shows number of detected cases in particular state.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic unknown.png \width30140 \height12080 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\f2\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa540\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sa206\partightenfactor0
+
+\f6\b\fs41\fsmilli20610 \cf2 \cb3 B. Result\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\b0\fs36 \cf2 \cb3 This paper aims to build a framework using machine learning techniques for potential predictions of cases caused from coronavirus. The analysis provides details on regular estimates of total of active person, the total recovered cases, and death occurred from coronavirus in India. The way total death and active cases increase day by day which is a worrying condition for India.\cb1 \
+\cb3 This research is an attempt to estimate the number of human beings who could be affected by new infection person, death and the total predicted recovery for upcoming 5 days. For estimating total new active, total of death and total of recoveries, five machine learning models LR, Least Absolute shrinkage and selection Operation, SVM, random forest and a decision tree is used.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f7\fs42\fsmilli21333 \cf6 \cb1 Machine learning algorithms used\uc0\u8232 As shown in figure Linear regression method is used for training the machine.We are appliying linear regression and SVM and comparing with current values and then we go for some time series analysis with the help of holt\'92s method so we can get exact values. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screenshot 2023-02-20 at 12.00.36 PM.png \width17630 \height6470 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f8 \cf6 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f7\fs42\fsmilli21333 \cf6 We are using hotl\'92s method.Holt\'92 model is a ststical model along with the arima model.This model gives us a better output for smoothing techniques for low data changes. 
+\f8\fs24 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs42 \cf4 SECTION IV.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs64 \cf2 \cb3 Conclusion\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 A major environmental crisis could be sparked by the hazardous of the COVID-19 pandemic. Researchers and government organizations around the world are concerned that a significant percentage of the world\'92s population will be impacted by the pandemic. In this study, we have used ML approaches for the prediction of the COVID-19 outbreak globally. The dataset contains the past data, and the data is in the day, month, and year format and make the prediction for upcoming days. The best result in the active, death and recovered cases is given by polynomial LASSO and polynomial LR. The other models also show good results in the forecasting of the data like LR, LASSO, Decision tree, Random forest. Death rate, and recovery rate will increase in the upcoming days, according to the effect of these two models Polynomial LASSO and polynomial LR. SVM shows the poor result among along because of them up, and down in dataset values, it difficult to divide the values by a hyperplane. Overall, we assume that, according to current model forecasts, Scenarios that could be useful to consider the future situation are right. Therefore, the research projections can be a great benefit for the people to take appropriate steps, and to take rights to manage the crisis of COVID-19. In this work, the two models Decision tree and Random forest do not show the promising result as they are been overfit.\
+\cb1 \
+\pard\tx720\pardeftab720\sa540\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab720\sa540\partightenfactor0
+\cf2 \
+}
